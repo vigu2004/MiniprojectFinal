@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right,#4481eb,#4481eb );
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.navbar-nav li a1{
+    color: black !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.navbar-nav li ul{
+    background-color:#4481eb;;
+}
+
+.d-flex{
+    background-color: #bfd6e8;
+    width: 10rem;
+    width: 30%;
+    padding: 0.3rem 0.5rem;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+/* ======================banner section========================= */
+#banner{
+    background-image: linear-gradient(to right,#4481eb,#4481eb );
+    color: #fff;
+    padding-top: 5%;
+}
+
+.promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.img-fluid{
+    padding: 20%;
+}
+
+/* ===============services================= */
+.services{
+    padding: 80px 0;
+}
+
+.service-img{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 1rem;
+}
+
+#services{
+    padding: 20px;
+}
+
+.services h5{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.title::before{
+    content:'';
+    background:#4481eb;;
+    height: 5px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+/* .title::after{
+    content:'';
+    background: blue;
+    height: 10px;
+    width: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    display: block;
+} */
+
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: #4481eb;;
+}
+
+/* ===============================About Us Section==================== */
+#about-us{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.about-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+#about-us ul li{
+    margin: 10px 0;
+}
+
+#about-us ul {
+    margin-left: 20px;
+}
+
+#about-us .btn-primary{
+    box-shadow: none;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: #4481eb;
+}
+
+
+/* =======================Customer Reviews====================== */
+#reviews{
+    margin: 100px 0;
+}
+
+.reviews{
+    border-left: 4px solid #4481eb;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.reviews img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.user-details{
+    display: inline-block;
+    font-size: 12px;
+}
+
+#reviews .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,#4481eb, #4481eb);
+}
+
+/* =====================footer======================== */
+/* Footer Styles */
+#footer {
+    background-image: linear-gradient(to right,#4481eb, #4481eb);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-box {
+    text-align: center;
+}
+
+.footer-box img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.address i {
+    margin-right: 5px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: blue;
+}
+
+.copyright {
+    text-align: center;
+}
