@@ -23,7 +23,7 @@ app.use(cors());
 
 
 app.get("/" , (req ,res) =>{
-    return res.redirect("/index.html");
+    return res.redirect("index.html");
 }).listen(3000);
 
 app.post("/login", async(request , response) => {
