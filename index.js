@@ -8,6 +8,7 @@ const { MongoClient } = require("mongodb");
 const uri = "mongodb+srv://vignesh20122004:miniproject1@cluster1.n6eqevq.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
+console.log(client)
 const app = express()
 
 app.use(bodyParse.json())
@@ -24,24 +25,29 @@ app.use(cors());
 
 app.get("/" , (req ,res) =>{
     return res.redirect("index.html");
-}).listen(3000);
+})
 
 app.post("/login", async(request , response) => {
     const db = client.db('mydb');
     const users = db.collection('Users');
-    
+
     console.log("login route",request.body, users);
     // response.status(200).json({message: "logged in successfully", data: request.body})
     try{
 
         const username =  request.body.username;
         const password = request.body.password;
-        
+
+        if(!username || !password){ 
+
+            response.status(500).json({message: "please enter username and password", data: request.body})
+            return;
+        }
 
         const res=await users.findOne({username: username});
         console.log(res);
-        if(res===null){
-            // response.send("information is incorrect, please sign up first!");
+        if(!res){
+
             response.status(500).json({message: "information is incorrect, please sign up first!", data: request.body})
         }
         else if(res.password === password){ 
@@ -55,13 +61,9 @@ app.post("/login", async(request , response) => {
 
         }
 
-//         db.collection('Users').findOne({username: username},(err , res)=>{
-// console.log(res, err)
-//             
-//         })
-
-
     }catch(error){
         console.log("invalid input")
     }
 })
+
+app.listen(3000)
