@@ -5,7 +5,7 @@ const cors= require("cors");
 
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your connection string.
-const uri = "mongodb+srv://vignesh20122004:miniproject1@cluster1.n6eqevq.mongodb.net/?retryWrites=true&w=majority";
+const uri = " ";
 const client = new MongoClient(uri);
 
 console.log(client)
